@@ -70,7 +70,7 @@ cURL is a command-line tool used to send HTTP requests. Below are examples of ho
 
 ### Get a Person by ID
 ```bash
-Copy
+
 curl -X GET "http://127.0.0.1:8000/person/1"
 ```
 ### Explanation:
@@ -79,7 +79,7 @@ curl -X GET "http://127.0.0.1:8000/person/1"
 
 ### Expected Response:
 ```json
-Copy
+
 {
     "id": 1,
     "name": "Jelius",
@@ -90,7 +90,7 @@ Copy
 
 ### Search for People
 ```bash
-Copy
+
 
 curl -X GET "http://127.0.0.1:8000/search/?name=Jelious"
 ```
@@ -100,7 +100,7 @@ curl -X GET "http://127.0.0.1:8000/search/?name=Jelious"
 
 ### Expected Response:
 ```json
-Copy
+
 
 [
     {
@@ -114,7 +114,7 @@ Copy
 
 ### Add a New Person
 ```bash
-Copy
+
 
 curl -X POST "http://127.0.0.1:8000/addperson" -H "Content-Type: application/json" -d '{"name": "Alice", "age": "30", "gender": "F"}'
 ```
@@ -128,7 +128,7 @@ curl -X POST "http://127.0.0.1:8000/addperson" -H "Content-Type: application/jso
 
 ### Expected Response:
 ```json
-Copy
+
 
 {
     "id": 5,
@@ -139,7 +139,7 @@ Copy
 ```
 ### Update a Person
 ```bash
-Copy
+
 
 curl -X PUT "http://127.0.0.1:8000/changeperson" -H "Content-Type: application/json" -d '{"id": 1, "name": "Jelius Updated", "age": "25", "gender": "M"}'
 ```
@@ -153,7 +153,7 @@ curl -X PUT "http://127.0.0.1:8000/changeperson" -H "Content-Type: application/j
 
 ### Expected Response:
 ```json
-Copy
+
 
 {
     "id": 1,
@@ -165,7 +165,7 @@ Copy
 ```
 ### Delete a Person
 ```bash
-Copy
+
 
 curl -X DELETE "http://127.0.0.1:8000/deleteperson/1"
 ```
@@ -175,7 +175,7 @@ curl -X DELETE "http://127.0.0.1:8000/deleteperson/1"
 
 ### Expected Response:
 ```json
-Copy
+
 
 "Successfully deleted a person with id 1"
 ```
@@ -186,7 +186,7 @@ Steps to Test in the Browser
 
 #### Run the API:
     ```bash
-    Copy
+    
 
     uvicorn main:app --reload
     ```
@@ -223,7 +223,7 @@ Steps to Test in the Browser
 
 ### View the response:
     ```json
-    Copy
+    
 
     {
         "id": 1,
@@ -243,7 +243,7 @@ Example: Testing POST /addperson in the Browser
 
 ### Enter the request body:
     ```json
-    Copy
+    
 
     {
         "name": "Alice",
@@ -256,7 +256,7 @@ Example: Testing POST /addperson in the Browser
 
 ### View the response:
     ```json
-    Copy
+    
 
     {
         "id": 5,
