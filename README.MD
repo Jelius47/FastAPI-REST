@@ -70,7 +70,6 @@ cURL is a command-line tool used to send HTTP requests. Below are examples of ho
 
 ### Get a Person by ID
 ```bash
-
 curl -X GET "http://127.0.0.1:8000/person/1"
 ```
 ### Explanation:
@@ -179,17 +178,17 @@ curl -X DELETE "http://127.0.0.1:8000/deleteperson/1"
 
 "Successfully deleted a person with id 1"
 ```
-### 2. Testing in the Browser
+## 2. Testing in the Browser
 
 You can also test the API directly in your browser using the FastAPI interactive documentation (Swagger UI).
 Steps to Test in the Browser
 
 #### Run the API:
-    ```bash
+ ```bash
     
 
     uvicorn main:app --reload
-    ```
+```
 
     ---Open the Documentation:
 
@@ -222,7 +221,7 @@ Steps to Test in the Browser
     Click Execute.
 
 ### View the response:
-    ```json
+```json
     
 
     {
@@ -231,7 +230,7 @@ Steps to Test in the Browser
         "age": "24",
         "gender": "M"
     }
-    ```
+```
 
 Example: Testing POST /addperson in the Browser
 
@@ -242,7 +241,7 @@ Example: Testing POST /addperson in the Browser
     Click Try it out.
 
 ### Enter the request body:
-    ```json
+ ```json
     
 
     {
@@ -250,12 +249,12 @@ Example: Testing POST /addperson in the Browser
         "age": "30",
         "gender": "F"
     }
-    ```
+```
 
     --Click Execute.
 
 ### View the response:
-    ```json
+```json
     
 
     {
